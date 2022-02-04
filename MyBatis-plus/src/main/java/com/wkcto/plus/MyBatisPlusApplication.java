@@ -1,0 +1,17 @@
+package com.wkcto.plus;
+
+import org.apache.ibatis.annotations.Mapper;
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+//@MapperScan(value = "com.wkcto.plus.dao")
+@MapperScan(value = "com.wkcto.order.mapper")
+public class MyBatisPlusApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(MyBatisPlusApplication.class, args);
+    }
+
+}
